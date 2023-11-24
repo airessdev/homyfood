@@ -1,0 +1,310 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+
+  /* Shadow/Badge */
+
+  img {
+    width: 162px;
+    height: 44px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+}
+
+.localisation {
+  background: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  column-gap: 17px;
+  justify-content: center;
+  align-items: center;
+}
+.localisation {
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.15);
+  &__image {
+    width: 12px;
+    height: 16px;
+  }
+  p {
+    color: #353535;
+
+    /* Button */
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.section-reservation {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: #000;
+    text-align: center;
+    /* Section Title */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h2 {
+    color: var(--Grey, #353535);
+    text-align: center;
+    /* Paragraph */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  $btn-bkg: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  button {
+    border-radius: 25px;
+    background: $btn-bkg;
+    width: 258px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    /* Shadow/Button */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    // // test
+    // position: relative;
+    // z-index: 1;
+    transition: all 250ms ease;
+
+    &:hover {
+      background-color: lighten($color: #ffffff, $amount: 15);
+      box-shadow: 0px 4px 10px 0px rgba(247, 247, 247, 0.25);
+      opacity: 85%;
+      transition: all 250ms ease;
+    }
+    &:hover:after {
+      opacity: 100%;
+    }
+  }
+}
+
+.section-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 30%;
+  }
+}
+
+.fonctionnement-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: 30%;
+  width: 80%;
+
+  ol {
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+    /* Shadow/Instructions */
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 10%;
+  }
+}
+
+.section-restaurant {
+  background: #f6f6f6;
+}
+.restaurant-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  margin: 17px;
+  &__description__wrap {
+    display: flex;
+    margin: 13px;
+  }
+  &__description__img__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 46%;
+    transition: all 250ms ease;
+  }
+  .testlike:not(target) {
+    background-image: url(/assets/img/ico/Like.svg);
+  }
+  .testlike:target {
+    background-image: url(/assets/img/ico/Likerose.svg);
+  }
+
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 231px;
+    width: 346px;
+  }
+  H2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+#restaurant-icone-like {
+  height: 22px;
+  width: 21px;
+  border-radius: 0%;
+}
+footer {
+  background: #353535;
+}
+
+/* TEST */
+
+/*  */
+// la pallette du gout
+.top__img__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  img {
+    width: 375px;
+    height: 275px;
+    flex-shrink: 0;
+  }
+}
+
+.main__restaurant__bkg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrap__card {
+    position: relative;
+    bottom: 30px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .titre {
+    display: flex;
+    align-self: self-start;
+    color: #101010;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 32px;
+  }
+  .sous__titre {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-self: self-start;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 40px;
+  }
+  &__minicard__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  &__minicard {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    padding: 15px;
+  }
+  &__minicard h4 {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__minicard h5 {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+  }
+  &__minicard__wrap__prix {
+    display: flex;
+    justify-content: space-between;
+  }
+}

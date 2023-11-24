@@ -1,0 +1,7 @@
+@media (min-width: 767.98px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=desktop.css.map */
