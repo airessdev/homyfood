@@ -2,6 +2,9 @@
   // outline: 1px solid red;
   font-family: "Roboto", sans-serif;
   color: #000;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body {
   padding: 0px;
@@ -24,6 +27,14 @@ header {
   background: #ffffff;
   justify-content: center;
   align-items: center;
+  h1 {
+    color: #101010;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
   img {
     width: 162px;
@@ -52,9 +63,8 @@ header {
   width: 100%;
 
   &__wrap__card {
-    position: relative;
     z-index: 2;
-    top: -30px;
+    margin-top: -30px;
     width: 100%;
   }
   &__wrap {
@@ -102,7 +112,9 @@ header {
     gap: 12px;
     align-items: center;
     width: 100%;
+    transition: all 3s ease;
   }
+
   &__minicard {
     border-radius: 15px;
     background: #fff;
@@ -117,9 +129,11 @@ header {
     flex-direction: row;
     justify-content: space-between;
     transition: all 2s ease;
+    transition: width 3s ease-out;
   }
   &__minicard__description {
-    transition: width 3s ease;
+    transition: all 3s ease;
+    width: 100%;
   }
   &__minicard__prix {
     display: flex;
@@ -128,15 +142,21 @@ header {
     transition: all 2s ease-in-out;
   }
   &__minicard:hover {
+    .elipse {
+      width: calc(100% - 100px);
+    }
     .check {
       transform: translateX(-60px);
     }
+
     .main__restaurant__bkg__minicard__prix {
       transform: translateX(-60px);
     }
-    .main__restaurant__bkg__minicard__description {
-      animation: wi 2s 1s ease forwards;
-    }
+  }
+
+  .elipse {
+    width: 100%;
+    transition: all 3s ease-out;
   }
 
   @keyframes wi {
@@ -202,6 +222,10 @@ header {
   font-size: 15px;
   color: #99e2d0;
   font-weight: 900;
+}
+.prout {
+  width: auto;
+  transition: width 3s ease;
 }
 .check {
   transition: all 2s ease;
@@ -311,6 +335,8 @@ footer {
 .section_plat,
 .section_dessert {
   animation: apparition 2s ease;
+  width: 100%;
+  transition: all 2s ease;
 }
 
 .section_plat {
