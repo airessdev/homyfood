@@ -12,6 +12,38 @@
       object-fit: cover;
     }
   }
+  .titre {
+    display: flex;
+    align-self: center !important;
+    color: #101010;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 32px;
+    padding-left: 20px;
+  }
+  .sous__titre {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-self: self-start;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 40px;
+    border-bottom: 3px solid #99e2d0;
+    width: 40px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+  }
   .main__restaurant__bkg {
     display: flex;
     flex-direction: column;
@@ -34,10 +66,65 @@
       width: 100%;
     }
   }
+
   .section_entree,
   .section_plat,
   .section_dessert {
     animation: apparition 2s ease;
     width: 70%;
+  }
+
+  .footer__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: baseline;
+    &__textimg {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      padding-right: 20px;
+      img {
+        width: 11px;
+        height: 13px;
+        margin: 0px;
+        padding: 0px;
+      }
+      p {
+        color: var(--White, #fff);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+      }
+      &__wrap__ligne {
+        display: flex;
+        flex-direction: row;
+        column-gap: 11px;
+        align-items: baseline;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-family: Shrikhand;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0px;
+      padding: 0px;
+
+      text-align: center;
+    }
   }
 }

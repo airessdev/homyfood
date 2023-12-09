@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link href="/assets/css/restaurant.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -30,6 +31,9 @@
   <body>
     <div class="contenu">
       <header>
+        <a class="fleche" href="/index.html">
+          <i class="fa-solid fa-arrow-left fleche"></i>
+        </a>
         <h1>ohmyfood</h1>
       </header>
       <div class="top__img__wrap">
@@ -42,7 +46,14 @@
       <section class="main__restaurant__bkg">
         <div class="main__restaurant__bkg__wrap__card">
           <div class="main__restaurant__bkg__wrap">
-            <h1 class="titre">La palette du goût</h1>
+            <div class="titre__wrap">
+              <h1 class="titre">La palette du goût</h1>
+
+              <span class="anim__coeur">
+                <i class="fa-solid fa-heart img-icone-like fa-solid__modif"></i>
+                <i class="fa-regular fa-heart img-icone-like-bas"></i>
+              </span>
+            </div>
 
             <!-- SECTION ENTREE DEBUT  -->
 
@@ -65,11 +76,9 @@
                   </div>
                 </div>
                 <div class="main__restaurant__bkg__minicard">
-                  <div
-                    class="main__restaurant__bkg__minicard__description elipse"
-                  >
+                  <div class="main__restaurant__bkg__minicard__description">
                     <h4>Foie gras de canard mi-cuit</h4>
-                    <h5>Et ses copeaux de truffe noire</h5>
+                    <h5 class="elipse">Et ses copeaux de truffe noire</h5>
                   </div>
                   <div class="main__restaurant__bkg__minicard__prix">35€</div>
                   <div class="check">
@@ -149,8 +158,8 @@
             <!-- SECTION PLAT FIN -->
             <!-- SECTION DESSERT DEBUT -->
             <h2 class="sous__titre">Desserts</h2>
-            <div class="main__restaurant__bkg__minicard__wrap">
-              <div class="section_dessert">
+            <div class="section_dessert">
+              <div class="main__restaurant__bkg__minicard__wrap">
                 <div class="main__restaurant__bkg__minicard">
                   <div
                     class="main__restaurant__bkg__minicard__description elipse"
@@ -195,7 +204,7 @@
                 </div>
               </div>
             </div>
-            <form action="#">
+            <form class="buttoncommander_wrap" action="#">
               <button class="buttoncommander">Commander</button>
             </form>
           </div>
