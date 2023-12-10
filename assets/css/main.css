@@ -58,7 +58,7 @@ body {
   align-items: center;
 }
 
-.testa {
+.titre__principal {
   color: #101010;
   font-family: Shrikhand;
   font-size: 28px;
@@ -92,7 +92,7 @@ header H1 {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 17px;
-       column-gap: 17px;
+  column-gap: 17px;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
@@ -192,7 +192,7 @@ header H1 {
   height: 73px;
   align-items: center;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   padding-left: 20px;
   border-radius: 20px;
   /* Shadow/Instructions */
@@ -202,7 +202,7 @@ header H1 {
 }
 .fonctionnement-menu li img {
   -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
 }
 
 .circle {
@@ -260,7 +260,8 @@ header H1 {
   line-height: normal;
   padding-left: 20px;
 }
-.section-restaurant__top, .section-restaurant__bottom {
+.section-restaurant__top,
+.section-restaurant__bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -320,7 +321,7 @@ header H1 {
   height: 231px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurant-card H2 {
   font-size: 18px;
@@ -374,7 +375,7 @@ footer {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 11px;
-       column-gap: 11px;
+  column-gap: 11px;
   align-items: baseline;
 }
 .footer__wrap h2 {
@@ -528,4 +529,4 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

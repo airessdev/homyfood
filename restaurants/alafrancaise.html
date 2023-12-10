@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>à la francaise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -18,168 +18,214 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link href="/assets/css/restaurant.css" rel="stylesheet" />
-    <title>À la française</title>
+    <link
+      rel="stylesheet"
+      href="/assets/css/desktop-restaurant.css"
+      media="screen and (min-width: 767.98px)"
+    />
   </head>
   <body>
-    <div class="top__img__wrap">
-      <img
-        src="/assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="image restaurant a la francaise"
-      />
-    </div>
-    <!-- SECTION MAIN DEBUT -->
-    <section class="main__restaurant__bkg">
-      <div class="main__restaurant__bkg__wrap__card">
-        <div class="main__restaurant__bkg__wrap">
-          <h1 class="titre">À la française</h1>
+    <div class="contenu">
+      <header>
+        <a class="fleche" href="/index.html">
+          <i class="fa-solid fa-arrow-left fleche"></i>
+        </a>
+        <h1>ohmyfood</h1>
+      </header>
+      <div class="top__img__wrap">
+        <img
+          src="/assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="image restaurant a la francaise"
+        />
+      </div>
+      <!-- SECTION MAIN DEBUT -->
+      <section class="main__restaurant__bkg">
+        <div class="main__restaurant__bkg__wrap__card">
+          <div class="main__restaurant__bkg__wrap">
+            <div class="titre__wrap">
+              <h1 class="titre">&Agrave; la francaise</h1>
 
-          <!-- SECTION ENTREE DEBUT  -->
+              <span class="anim__coeur">
+                <i class="fa-solid fa-heart img-icone-like fa-solid__modif"></i>
+                <i class="fa-regular fa-heart img-icone-like-bas"></i>
+              </span>
+            </div>
 
-          <h2 class="sous__titre">ENTREES</h2>
-          <div class="main__restaurant__bkg__minicard__wrap">
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description">
-              <h4>Tartare de poulpe acidulé</h4>
-                <h5>Aux zestes d'orange</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix"> 25€ </div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
+            <!-- SECTION ENTREE DEBUT  -->
+
+            <h2 class="sous__titre">ENTREES</h2>
+            <div class="section_entree">
+              <div class="main__restaurant__bkg__minicard__wrap">
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <h5>Aux zestes d'orange</h5>
+                  </div>
+                  <div class="main__restaurant__bkg__minicard__prix">25€</div>
+
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description">
-              <h4>Velouté de légumes d'antan</h4>
-              
-                <h5>Carotte, panais, topinambour</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">35€</div>
-                <div class="check"><div class="check__icon">
-                  <i class="fa-solid fa-check"></i>
-                  
+                <div class="main__restaurant__bkg__minicard">
+                  <div class="main__restaurant__bkg__minicard__description">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <h5 class="elipse">Carotte, panais, topinambour</h5>
+                  </div>
+                  <div class="main__restaurant__bkg__minicard__prix">35€</div>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Soupe à l'oignon</h4>
-              
-                <h5>Revisitée</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">20€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
-                  
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Soupe à l'oignon</h4>
+                    <h5>Revisitée 20€</h5>
+                  </div>
+                  <div class="main__restaurant__bkg__minicard__prix">20€</div>
+
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- SECTION ENTREE FIN -->
             <!-- SECTION PLAT DEBUT -->
             <h2 class="sous__titre">Plats</h2>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Coquilles Saint-Jacques</h4>
-              
-                <h5>Accompagnées d'une purée de panais</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">40€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
+            <div class="section_plat">
+              <div class="main__restaurant__bkg__minicard__wrap">
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <h5>Accompagnées d'une purée de panais</h5>
+                  </div>
+                  <span class="main__restaurant__bkg__minicard__prix">40€</span>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Magret de canard</h4>
-              
-                <h5>Et parmentier de pommes de terre</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">35€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
+
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Magret de canard</h4>
+                    <h5>Et parmentier de pommes de terre</h5>
+                  </div>
+                  <span class="main__restaurant__bkg__minicard__prix">35€</span>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-              
-                <h5>Sur son lit de gnocchis aux légumes</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">44€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
+
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                    <h5>Sur son lit de gnocchis aux légumes</h5>
+                  </div>
+                  <span class="main__restaurant__bkg__minicard__prix">44€</span>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- SECTION PLAT FIN -->
             <!-- SECTION DESSERT DEBUT -->
             <h2 class="sous__titre">Desserts</h2>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Pétales de violettes glacés</h4>
-              
-                <h5>Et purée de noisettes</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">18€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
+            <div class="section_dessert">
+              <div class="main__restaurant__bkg__minicard__wrap">
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Pétales de violettes glacés</h4>
+                    <h5>Et purée de noisettes</h5>
+                  </div>
+                  <span class="main__restaurant__bkg__minicard__prix">18€</span>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Fondant au chocolat</h4>
+                    <h5>Revisité</h5>
+                  </div>
+                  <span class="main__restaurant__bkg__minicard__prix">22€</span>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="main__restaurant__bkg__minicard">
+                  <div
+                    class="main__restaurant__bkg__minicard__description elipse"
+                  >
+                    <h4>Millefeuille croustillant</h4>
+                    <h5>Myrtilles et pâte d’amande</h5>
+                  </div>
+                  <div class="main__restaurant__bkg__minicard__prix">23€</div>
+                  <div class="check">
+                    <div class="check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description"></div>
-              <h4>Fondant au chocolat</h4>
-                <h5>Revisité</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">22€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-            </div>
-            <div class="main__restaurant__bkg__minicard">
-              <div class="main__restaurant__bkg__minicard__description">
-              <h4>Millefeuille croustillant</h4>
-                <h5>Myrtilles et pâte d’amande</h5>
-              </div>
-                <div class="main__restaurant__bkg__minicard__prix">23€</div>
-                <div class="check">
-                  <div class="check__icon">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-            </div>
-            <!-- SECTION DESSERT FIN -->
+            <form class="buttoncommander_wrap" action="#">
+              <button class="buttoncommander">Commander</button>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer__wrap">
-        <h2>ohmyfood</h2>
-        <div class="footer__wrap__textimg">
-          <div class="footer__wrap__textimg__wrap__ligne">
-            <img src="/assets/img/ico/icone-fourchette.svg" alt="icone" />
-            <p>Proposer un restaurant</p>
+      </section>
+
+      <footer>
+        <div class="footer__wrap">
+          <h2>ohmyfood</h2>
+          <div class="footer__wrap__textimg">
+            <div class="footer__wrap__textimg__wrap__ligne">
+              <img src="/assets/img/ico/icone-fourchette.svg" alt="icone" />
+              <p>Proposer un restaurant</p>
+            </div>
+            <div class="footer__wrap__textimg__wrap__ligne">
+              <img src="/assets/img/ico/icone-main.svg" alt="icone" />
+              <p>partenaire</p>
+            </div>
+            <p>Mentions légales</p>
+            <p>Contact</p>
           </div>
-          <div class="footer__wrap__textimg__wrap__ligne">
-            <img src="/assets/img/ico/icone-main.svg" alt="icone" />
-            <p>partenaire</p>
-          </div>
-          <p>Mentions légales</p>
-          <p>Contact</p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
