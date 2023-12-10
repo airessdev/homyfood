@@ -297,21 +297,74 @@ header {
     position: relative;
   }
 
-  .img-icone-like,
+  // TEST
+  .img-icone-like {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    border-radius: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    font-size: 25px;
+  }
+  .note {
+    opacity: 1;
+  }
   .img-icone-like-bas {
     position: absolute;
-    right: 0px;
-    height: 22px;
-    width: 21px;
+    top: 10px;
+    right: 20px;
+
     border-radius: 0;
     opacity: 1;
     transition: opacity 1s ease;
+    font-size: 25px;
   }
-
-  .img-icone-like:hover,
-  .img-icone-like-bas:hover {
+  .notebas {
     opacity: 0;
   }
+  .anim__coeur {
+    transition: all 3s ease;
+  }
+  .anim__coeur:hover {
+    .img-icone-like {
+      opacity: 1;
+    }
+    .img-icone-like-bas {
+      opacity: 0;
+    }
+  }
+  .anim__coeur__note:hover {
+    .img-icone-like {
+      opacity: 0;
+    }
+    .img-icone-like-bas {
+      opacity: 1;
+    }
+  }
+
+  .fa-solid__modif {
+    color: #ff79da;
+  }
+
+  // TEST
+
+  // .img-icone-like,
+  // .img-icone-like-bas {
+  //   position: absolute;
+  //   right: 0px;
+  //   height: 22px;
+  //   width: 21px;
+  //   border-radius: 0;
+  //   opacity: 1;
+  //   transition: opacity 1s ease;
+  // }
+
+  // .img-icone-like:hover,
+  // .img-icone-like-bas:hover {
+  //   opacity: 0;
+  // }
 
   .img__card__top {
     border-top-left-radius: 15px;
