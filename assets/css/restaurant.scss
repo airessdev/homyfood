@@ -13,13 +13,8 @@ body {
   flex-direction: column;
 }
 .contenu {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 header {
   display: flex;
@@ -55,6 +50,7 @@ header {
   img {
     width: 100%;
     height: 275px;
+    object-fit: cover;
   }
 }
 .note {
@@ -65,7 +61,7 @@ header {
 .main__restaurant__bkg {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
   width: 100%;
 
@@ -78,10 +74,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background: #f6f6f6;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    width: 100%;
+  }
+  .centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -309,18 +311,12 @@ footer {
 }
 
 .titre {
-  display: flex;
-  align-self: self-start;
   color: #101010;
   font-family: Shrikhand;
   font-size: 28px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 32px;
-  padding-left: 20px;
+  font-weight: 400;
 }
 
 .sous__titre {
@@ -343,24 +339,25 @@ footer {
 }
 
 .titre__wrap {
-  position: relative;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
 }
 .img-icone-like {
   position: absolute;
-  top: 40px;
-  right: 20px;
-
+  top: 0px;
+  right: 0px;
   border-radius: 0;
   opacity: 0;
   transition: opacity 1s ease;
   font-size: 25px;
 }
 .img-icone-like-bas {
-  position: absolute;
-  top: 40px;
-  right: 20px;
-
+  top: 0px;
+  right: 0px;
   border-radius: 0;
   opacity: 1;
   transition: opacity 1s ease;
@@ -368,6 +365,10 @@ footer {
 }
 .anim__coeur {
   transition: all 3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .anim__coeur:hover {
   .img-icone-like {

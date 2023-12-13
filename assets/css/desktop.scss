@@ -6,7 +6,7 @@
     align-items: center;
     padding: 0px;
     margin: 0px;
-    padding: 50px 180px;
+    padding: 50px 0px;
 
     h1 {
       font-size: 24px;
@@ -20,7 +20,7 @@
     flex-direction: row;
     row-gap: 0px;
     height: 0%;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     ol {
       display: flex;
@@ -48,7 +48,7 @@
   }
 
   .section-restaurant {
-    padding: 30px 180px 30px 180px;
+    padding: 30px 0px;
     background: #f6f6f6;
     width: 100%;
 
@@ -63,6 +63,7 @@
       margin: 0px;
       padding-bottom: 28px;
     }
+
     .restaurant-card {
       padding: 0px;
       margin: 0px;
@@ -71,15 +72,19 @@
     &__top {
       display: flex;
       flex-direction: row;
-      justify-content: unset;
+
       gap: 100px;
       padding-bottom: 50px;
+      width: 80%;
+      margin: auto;
     }
     &__bottom {
       display: flex;
       flex-direction: row;
-      justify-content: unset;
+
       gap: 100px;
+      width: 80%;
+      margin: auto;
     }
   }
   .footer__wrap {
@@ -134,5 +139,11 @@
 
       text-align: center;
     }
+  }
+  .wrap__titre__desk {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
   }
 }

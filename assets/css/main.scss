@@ -162,7 +162,10 @@ header {
     }
   }
 }
-
+.wrap__titre__desk {
+  display: flex;
+  width: 90%;
+}
 .section-fonctionnement {
   display: flex;
   flex-direction: column;
@@ -173,9 +176,6 @@ header {
   h1 {
     font-size: 24px;
     font-weight: 700;
-    padding-left: 20px;
-    display: flex;
-    align-self: baseline;
   }
 }
 .fonctionnement-menu {
@@ -297,7 +297,6 @@ header {
     position: relative;
   }
 
-  // TEST
   .img-icone-like {
     position: absolute;
     top: 10px;
@@ -347,24 +346,6 @@ header {
   .fa-solid__modif {
     color: #ff79da;
   }
-
-  // TEST
-
-  // .img-icone-like,
-  // .img-icone-like-bas {
-  //   position: absolute;
-  //   right: 0px;
-  //   height: 22px;
-  //   width: 21px;
-  //   border-radius: 0;
-  //   opacity: 1;
-  //   transition: opacity 1s ease;
-  // }
-
-  // .img-icone-like:hover,
-  // .img-icone-like-bas:hover {
-  //   opacity: 0;
-  // }
 
   .img__card__top {
     border-top-left-radius: 15px;
