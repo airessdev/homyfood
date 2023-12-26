@@ -126,7 +126,7 @@ header a {
   transition: all 2s ease-in-out;
 }
 .main__restaurant__bkg__minicard:hover .elipse {
-  width: calc(100% - 100px);
+  width: calc(100% - 50px);
 }
 .main__restaurant__bkg__minicard:hover .check {
   transform: translateX(-60px);
