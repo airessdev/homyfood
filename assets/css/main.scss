@@ -7,10 +7,10 @@
 
 // ANIMATION
 @keyframes opac {
-  from {
+  0% {
     opacity: 100%;
   }
-  to {
+  100% {
     opacity: 0%;
     z-index: -2;
   }
@@ -23,7 +23,7 @@
   to {
   }
 }
-// TEST
+
 body {
   width: 100%;
   padding: 0px;
@@ -34,7 +34,7 @@ body {
 }
 
 .loader {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   position: absolute;
   top: 0;
   left: 0;
@@ -46,8 +46,14 @@ body {
   animation-delay: 3s;
 }
 .loader-wrapper {
-  H1 {
+  span {
     animation: rotateloader 3s infinite linear;
+    color: #e5dcdc;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   display: flex;
   flex-direction: column;
@@ -344,7 +350,16 @@ header {
   }
 
   .fa-solid__modif {
-    color: #ff79da;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#9356dc),
+      to(#ff79da)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; /* reset Font Awesome's display:inline-block */
   }
 
   .img__card__top {
