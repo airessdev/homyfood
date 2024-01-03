@@ -271,7 +271,7 @@ footer {
        column-gap: 11px;
   align-items: baseline;
 }
-.footer__wrap h2 {
+.footer__wrap span {
   color: #fff;
   font-family: Shrikhand;
   font-size: 18px;
