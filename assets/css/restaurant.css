@@ -283,30 +283,35 @@ footer {
   padding-bottom: 16px;
 }
 
+.section_entree {
+  animation-name: apparition;
+  animation-duration: 1s;
+  width: 95%;
+}
+
 @keyframes apparition {
-  from {
-    opacity: 0%;
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
     transform: translateY(-20px);
   }
-  to {
-    opacity: 100%;
+  100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
-.section_entree,
-.section_plat,
-.section_dessert {
-  animation: apparition 2s ease;
-  width: 95%;
-  transition: all 2s ease;
-}
-
 .section_plat {
-  animation-delay: 1s;
+  width: 95%;
+  animation-name: apparition;
+  animation-duration: 3s;
 }
 
 .section_dessert {
-  animation-delay: 1.5s;
+  width: 95%;
+  animation-name: apparition;
+  animation-duration: 5s;
 }
 
 .titre {
