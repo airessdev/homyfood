@@ -8,7 +8,7 @@
     margin: 0px;
     padding: 50px 0px;
   }
-  .section-fonctionnement h1 {
+  .section-fonctionnement h2 {
     font-size: 24px;
     font-weight: 700;
     padding-left: 0px;
@@ -52,7 +52,7 @@
     background: #f6f6f6;
     width: 100%;
   }
-  .section-restaurant h1 {
+  .section-restaurant .titre {
     color: #000;
     font-family: Roboto;
     font-size: 24px;
@@ -126,7 +126,7 @@
          column-gap: 11px;
     align-items: baseline;
   }
-  .footer__wrap h2 {
+  .footer__wrap span {
     color: #fff;
     font-family: Shrikhand;
     font-size: 18px;

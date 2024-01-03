@@ -123,17 +123,16 @@ header H1 {
   padding-bottom: 57px;
   padding-top: 39px;
 }
-.section-reservation h1 {
+.section-reservation h2 {
   color: #000;
   text-align: center;
-  /* Section Title */
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   padding-bottom: 10px;
 }
-.section-reservation h2 {
+.section-reservation h3 {
   color: #353535;
   text-align: center;
   font-size: 18px;
@@ -178,7 +177,7 @@ header H1 {
   padding-bottom: 68px;
   padding-top: 48px;
 }
-.section-fonctionnement h1 {
+.section-fonctionnement h2 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -259,7 +258,7 @@ header H1 {
   padding-bottom: 68px;
   background: #f6f6f6;
 }
-.section-restaurant h1 {
+.section-restaurant h2 {
   color: #000;
   font-family: Roboto;
   font-size: 24px;
@@ -361,7 +360,7 @@ header H1 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurant-card H2 {
+.restaurant-card span {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -371,7 +370,6 @@ header H1 {
 .restaurant-card p {
   font-size: 17px;
   font-weight: 300;
-  text-align: center;
   padding: 0px;
   margin: 0px;
 }
@@ -416,7 +414,7 @@ footer {
        column-gap: 11px;
   align-items: baseline;
 }
-.footer__wrap h2 {
+.footer__wrap span {
   color: #fff;
   font-family: Shrikhand;
   font-size: 18px;
