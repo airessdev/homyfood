@@ -11,10 +11,11 @@
     opacity: 100%;
   }
   90% {
-    z-index: -2;
+    opacity: 10%;
   }
   100% {
     opacity: 0%;
+    z-index: -2;
   }
 }
 
@@ -24,6 +25,7 @@
   }
   to {
     transform: rotate(360);
+    z-index: -3;
   }
 }
 
@@ -45,12 +47,14 @@ body {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  animation: opac 3s forwards;
+  animation: forwards;
+  animation-name: opac;
   animation-delay: 3s;
+  animation-duration: 2s;
 }
 .loader-wrapper {
   span {
-    animation: rotateloader 3s linear;
+    animation: rotateloader 2s linear;
     color: #e5dcdc;
     font-family: Shrikhand;
     font-size: 28px;
